@@ -1,0 +1,33 @@
+/* General */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+/* Index */
+.titleOfHeader {
+	text-align: center;
+}
+.listOfItemsNavBar {
+	list-style: none;
+}
+.itemNavBar {
+	display: inline-block;
+	padding-left: 2rem;
+	margin-top: 1rem;
+}
+.titleOfMain,
+.paragraphIndex,
+.footer {
+	margin-top: 1rem;
+}
+.copyrigthFooter {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
