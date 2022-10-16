@@ -1,0 +1,20 @@
+[
+	{
+		"foto": "../img/hembra.jpg",
+		"sexo": "Hembra",
+		"edad": 5,
+		"castrado": "Si",
+		"vacunas": "Si",
+		"desparasitado": "Si",
+		"observaciones": "Dócil"
+	},
+	{
+		"foto": "../img/macho.jpg",
+		"sexo": "Macho",
+		"edad": 1,
+		"castrado": "Si",
+		"vacunas": "Si",
+		"desparasitado": "Si",
+		"observaciones": "Salvaje"
+	}
+]

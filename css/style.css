@@ -9,7 +9,6 @@ body {
 a {
 	text-decoration: none;
 }
-/* Index */
 .titleOfHeader {
 	text-align: center;
 }
@@ -21,13 +20,21 @@ a {
 	padding-left: 2rem;
 	margin-top: 1rem;
 }
+.copyrigthFooter {
+	display: flex;
+	justify-content: center;
+	margin-top: 1rem;
+}
 .titleOfMain,
 .paragraphIndex,
 .footer {
 	margin-top: 1rem;
 }
-.copyrigthFooter {
-	display: flex;
-	justify-content: center;
+
+/* Adopcion */
+.checkAdopcion {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-right: 1rem;
 	margin-top: 1rem;
 }
