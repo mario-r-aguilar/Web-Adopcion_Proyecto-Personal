@@ -1,6 +1,7 @@
 [
 	{
 		"foto": "../img/hembra.jpg",
+		"id": 1,
 		"sexo": "Hembra",
 		"edad": 5,
 		"castrado": "Si",
@@ -10,6 +11,7 @@
 	},
 	{
 		"foto": "../img/macho.jpg",
+		"id": 2,
 		"sexo": "Macho",
 		"edad": 1,
 		"castrado": "Si",

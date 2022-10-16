@@ -10,8 +10,13 @@ const renderizar = async () => {
 			div.classList.add('col-lg-3');
 			div.classList.add('card');
 			div.classList.add('border-0');
+			div.setAttribute('id', 'cardCandidato');
 			div.innerHTML = `
-        <img class="card-img-top img-fluid" src="${element.foto}">
+        <img class="card-img-top img-fluid" src="${element.foto}">		
+		<button type="button" class="btn btn-primary mt-1 mb-2" data-bs-toggle="modal" data-bs-target="#adopcionModal">
+  Adoptar
+</button>
+<p class="card-text">ID: ${element.id}</p>
         <p class="card-text">Sexo: ${element.sexo}</p>
         <p class="card-text">Edad: ${element.edad} año/s</p>
         <p class="card-text">Castrado: ${element.castrado}</p>
