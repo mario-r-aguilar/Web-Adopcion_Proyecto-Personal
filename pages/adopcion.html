@@ -61,7 +61,7 @@
 							></button>
 						</div>
 						<div class="modal-body">
-							<form action="">
+							<form action="" id="datosAdopcion" name="datosAdopcion">
 								<div class="container">
 									<div class="formAdopcionBlockOne row">
 										<div class="input-group mb-2">
@@ -76,6 +76,7 @@
 												placeholder="Ingrese el ID"
 												aria-label="identificador"
 												aria-describedby="identificador"
+												name="ID"
 												required
 											/>
 										</div>
@@ -91,6 +92,7 @@
 												placeholder="Ingrese su nombre completo"
 												aria-label="nombreCompleto"
 												aria-describedby="nombreCompleto"
+												name="nombreCompleto"
 												required
 											/>
 										</div>
@@ -104,6 +106,7 @@
 												placeholder="Ingrese su teléfono"
 												aria-label="telefono"
 												aria-describedby="telefono"
+												name="telefono"
 												required
 											/>
 										</div>
@@ -117,34 +120,31 @@
 												placeholder="Ingrese su barrio"
 												aria-label="barrio"
 												aria-describedby="barrio"
+												name="barrio"
 												required
 											/>
 										</div>
 									</div>
-									<div class="formAdopcionBlockTwo row">
-										<div class="input-group mb-2">
-											<input
-												class="mt-0 checkAdopcion"
-												type="checkbox"
-												value=""
-												aria-label="tipoViviendaDto"
-											/>
-											<span class="" id="tipoViviendaDto"
-												>Vivo en un departamento con red</span
-											>
-										</div>
-										<div class="input-group mb-2">
-											<input
-												class="mt-0 checkAdopcion"
-												type="checkbox"
-												value=""
-												aria-label="tipoViviendaCasa"
-											/>
-											<span class="" id="tipoViviendaCasa"
-												>Vivo en una casa con tapia y red</span
-											>
-										</div>
+									<div class="input-group mb-2">
+										<label class="input-group-text" for="tipoDeVivienda"
+											>Tipo de vivienda</label
+										>
+										<select
+											class="form-select"
+											id="tipoDeVivienda"
+											name="tipoDeVivienda"
+											required
+										>
+											<option selected>
+												Elija el tipo de vivienda
+											</option>
+											<option value="Departamento con red">Vivo en un departamento con red</option>
+											<option value="Casa con red">Vivo en una casa con tapia y red</option>
+											<option value="Departamento sin red">Vivo en un departamento sin red</option>
+											<option value="Casa sin red">Vivo en una casa con tapia sin red</option>
+										</select>
 									</div>
+									
 									<div class="formAdopcionBlockThree row">
 										<div class="input-group mb-2">
 											<span class="input-group-text" id="email"
@@ -152,10 +152,11 @@
 											>
 											<input
 												type="email"
-												class="form-control"
+												class="form-control datosAd"
 												placeholder="Ingrese su correo"
 												aria-label="email"
 												aria-describedby="email"
+												name="email"
 												required
 											/>
 										</div>
@@ -164,16 +165,17 @@
 												>Redes Sociales</label
 											>
 											<select
-												class="form-select"
+												class="form-select datosAd"
 												id="redSocial"
+												name="redSocial"
 												required
 											>
 												<option selected>
 													Elija su red social más utilizada
 												</option>
-												<option value="1">Instagram</option>
-												<option value="2">Facebook</option>
-												<option value="3">Twitter</option>
+												<option value="Instagram">Instagram</option>
+												<option value="Facebook">Facebook</option>
+												<option value="Twitter">Twitter</option>
 											</select>
 										</div>
 										<div class="input-group mb-2">
@@ -184,32 +186,34 @@
 											>
 											<input
 												type="text"
-												class="form-control"
+												class="form-control datosAd"
 												placeholder="Ingrese el usuario de la red social elegida"
 												aria-label="usuarioRedSocial"
 												aria-describedby="usuarioRedSocial"
+												name="usuarioRedSocial"
 												required
 											/>
 										</div>
 									</div>
 								</div>
+								<div class="">
+									<button
+										class="btn btn-primary"
+										id="enviarFormAdopcion"
+										type="submit"
+									>
+										Envíar solicitud
 							</form>
 						</div>
 						<div class="modal-footer">
 							<button
 								type="button"
-								class="btn btn-secondary"
+								class="btn btn-secondary "
+								id="cerrarModal"
 								data-bs-dismiss="modal"
 							>
 								Cerrar
 							</button>
-							<div class="">
-								<button
-									class="btn btn-primary"
-									id="enviarFormAdopcion"
-									type="button"
-								>
-									Envíar solicitud
 								</button>
 							</div>
 						</div>
@@ -232,6 +236,8 @@
 			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
 			crossorigin="anonymous"
 		></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 		<script src="../js/renderCandidatos.js"></script>
+		<script src="../js/appFormularioAdopcion.js"></script>
 	</body>
 </html>
