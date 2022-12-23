@@ -1,4 +1,5 @@
 let contenedor = document.getElementById('contenedor');
+
 const renderizar = async () => {
 	try {
 		const respuesta = await fetch('../js/candidatos.JSON');
@@ -12,11 +13,11 @@ const renderizar = async () => {
 			div.classList.add('border-0');
 			div.setAttribute('id', 'cardCandidato');
 			div.innerHTML = `
-        <img class="card-img-top img-fluid" src="${element.foto}">		
-		<button type="button" class="btn btn-primary mt-1 mb-2" data-bs-toggle="modal" data-bs-target="#adopcionModal">
-  Adoptar
-</button>
-<p class="card-text">ID: ${element.id}</p>
+			<img class="card-img-top img-fluid" src="${element.foto}">		
+			<button onclick="getID ()" type="button" class="btn btn-primary mt-1 mb-2" data-bs-toggle="modal" data-bs-target="#adopcionModal">
+			Adoptar
+			</button>
+			<p class="card-text">ID: ${element.id}</p>
         <p class="card-text">Sexo: ${element.sexo}</p>
         <p class="card-text">Edad: ${element.edad} año/s</p>
         <p class="card-text">Castrado: ${element.castrado}</p>
@@ -30,4 +31,16 @@ const renderizar = async () => {
 		console.log(error);
 	}
 };
+
 renderizar();
+
+const getID = async () => {
+	try {
+		let contentID = document.getElementById('candidatoID');
+		let candidatoIdentify = document.createElement('p');
+		candidatoIdentify.innerHTML = `ID: ${element.id}`;
+		contentID.append(candidatoIdentify);
+	} catch (error) {
+		console.log(error);
+	}
+};

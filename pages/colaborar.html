@@ -22,36 +22,54 @@
 		<title>Colabora con nosotros</title>
 	</head>
 	<body class="body">
-		<header class="header">
-			<h1 class="titleOfHeader">Córdoba al Rescate</h1>
+		<header>
+			<div>
+				<a href="../index.html"
+					><img src="../img/fructuosoheader.png" class="headerlogo"
+				/></a>
+			</div>
+			<input type="checkbox" id="opciones" />
+			<label for="opciones"
+				><img src="../img/options.png" class="imgopciones"
+			/></label>
+			<nav class="menu">
+				<ul class="listOfItemsNavBar">
+					<li class="itemNavBar"><a href="../index.html">Inicio</a></li>
+					<li class="itemNavBar">
+						<a href="./adopcion.html">Adopción</a>
+					</li>
+					<li class="itemNavBar">
+						<a href="./colaborar.html">Colaborar</a>
+					</li>
+					<li class="itemNavBar">
+						<a href="./contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
-		<nav class="navBarList navbar navbar-dark bg-dark">
-			<ul class="listOfItemsNavBar">
-				<li class="itemNavBar"><a href="../index.html">Inicio</a></li>
-				<li class="itemNavBar">
-					<a href="./adopcion.html">Adopción</a>
-				</li>
-				<li class="itemNavBar">
-					<a href="./colaborar.html">Colaborar</a>
-				</li>
-				<li class="itemNavBar">
-					<a href="./contacto.html">Contacto</a>
-				</li>
+		<!-- <div class="carrousel">
+			<ul>
+				<li><img src="../img/imgslide1.jpg" /></li>
+				<li><img src="../img/imgslide2.jpg" /></li>
+				<li><img src="../img/imgslide3.jpg" /></li>
+				<li><img src="../img/imgslide4.jpg" /></li>
 			</ul>
-		</nav>
+		</div> -->
 		<main class="main">
 			<section>
-				<h2 class="titleOfMain">Rifas</h2>
-				<h4 class="subTitleOfMain">Premios</h4>
-				<div class="paragraphColaborar container">
-					<p class="pColaborarOne">1º Premio: 1 Tatuaje 25x25 cm</p>
-					<p class="pColaborarTwo">2º Premio: 1 Tatuaje 20x20 cm</p>
-					<p class="pColaborarThree">3º Premio: 1 Tatuaje 15x15 cm</p>
-					<p class="pColaborarFour">4º Premio: 1 Tatuaje 10x10 cm</p>
-					<p class="pColaborarFive">5º Premio: 1 Tatuaje 5x5 cm</p>
-					<p class="pColaborarSix">
-						Sortea por Lotería Nacional el 12/12/2022
-					</p>
+				<div class="sorteos">
+					<h2 class="titleOfMain">Rifas</h2>
+					<h4 class="subTitleOfMain">Premios</h4>
+					<div class="paragraphColaborar container">
+						<p class="pColaborarOne">1º Premio: 1 Tatuaje 25x25 cm</p>
+						<p class="pColaborarTwo">2º Premio: 1 Tatuaje 20x20 cm</p>
+						<p class="pColaborarThree">3º Premio: 1 Tatuaje 15x15 cm</p>
+						<p class="pColaborarFour">4º Premio: 1 Tatuaje 10x10 cm</p>
+						<p class="pColaborarFive">5º Premio: 1 Tatuaje 5x5 cm</p>
+						<p class="pColaborarSix">
+							Sortea por Lotería Nacional el 12/12/2022
+						</p>
+					</div>
 				</div>
 				<h4 class="subTitleOfMain">
 					Participa completando el siguiente formulario
@@ -95,7 +113,7 @@
 								required
 							/>
 						</div>
-						<div class="">
+						<div class="numbersubmit">
 							<button class="btn btn-primary" type="submit">
 								Pedí tu número
 							</button>
@@ -108,8 +126,61 @@
 				<h5 class="subTitleOfMainTwo">Link de pago</h5>
 			</section>
 		</main>
-		<footer class="footer">
-			<span class="copyrigthFooter">© 2022</span>
+		<footer class="piedepagina">
+			<div class="grupo1">
+				<div class="box">
+					<figure>
+						<a href="#">
+							<img
+								src="../img/imgfructuoso.png"
+								alt="logo"
+								class="imgfooter"
+							/>
+						</a>
+					</figure>
+				</div>
+
+				<div class="box">
+					<h2>Sobre Nosotros</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+						Minus, veritatis
+					</p>
+				</div>
+
+				<div class="box">
+					<h2>Siguenos</h2>
+					<div class="redsocial">
+						<a href="https://www.facebook.com/" class="fa fa-facebook"
+							><img
+								src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png
+				  "
+								class="imgredsocial"
+						/></a>
+						<a href="https://www.instagram.com/" class="fa fa-instagram">
+							<img
+								src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png"
+								class="imgredsocial"
+						/></a>
+						<a href="https://twitter.com/?lang=es" class="fa fa-twitter">
+							<img
+								src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-6.png"
+								class="imgredsocial"
+						/></a>
+						<a href="https://www.youtube.com/" class="fa fa-youtube"
+							><img
+								src="https://cdn-icons-png.flaticon.com/512/174/174883.png"
+						/></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="grupo2">
+				<small
+					>&copy;2022 <b>Fructuoso Rescate Animal</b> - Todos los Derechos
+					Reservados</small
+				>
+			</div>
 		</footer>
 		<!-- JS Files -->
 		<script src=""></script>
